@@ -16,6 +16,8 @@ Joue tes batailles tour par tour avec le Tarot du Chariot et le contrôle automa
 | Contrôle manuel des invités, observé dans la configuration testée | Notre patch BPS |
 | Apparition des Buff Cards et cartes de départ des ennemis supprimées | **Buff Card Removal** de ChaoticBrave |
 
+**[Notes de version v1.1](docs/RELEASE_v1.1.md)** · [Archive de distribution v1.1](dist/Tactics_Ogre_Reborn_Mode_Manuel_v1.1.zip)
+
 ## Installation
 
 1. Ferme le jeu. Sauvegarde ton exécutable et les données que tu vas remplacer.
