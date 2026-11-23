@@ -1,0 +1,29 @@
+{
+  "mod_name": "Tactics Ogre Reborn — Mode Manuel",
+  "build": "Pack public v1.1 / patch exact v1.0",
+  "source_file_expected": "Tactics Ogre Reborn.exe.unpacked.exe",
+  "source_size": 14183184,
+  "source_sha256": "7b0230a11498f40396c9048345e7cfe0ef442cb7ca8faffc6f197920d2669599",
+  "target_size": 14183936,
+  "target_sha256": "e84a5857cd04fe316b4c81c77405b84889537bb00291c327b00c6d65fafb5a01",
+  "patch_file": "TOR_Mode_Manuel_EXACT_v1.0.bps",
+  "patch_size": 973,
+  "patch_sha256": "7c1dba87bb8ea8f1de0beed1ad6478de6acc4116e495803765988a9f6fd35332",
+  "battle_data_release_dat_expected_sha256": "d349fb7d03a2abe124e9c6a25a09f61b3c56c615e16326c5c2b137ba6ed0aa8c",
+  "contains_full_game_or_exe": false,
+  "source_of_truth": "Exécutable de référence du Mode Manuel validé en jeu par Nuit.",
+  "note": "Game version specific; do not apply to original packed Steam executable.",
+  "pack_version": "1.1",
+  "patch_version": "1.0",
+  "required_mods": [
+    {
+      "name": "Tactics Ogre Reborn Buff Card Removal",
+      "author": "ChaoticBrave",
+      "version_referenced": "1.3",
+      "url": "https://www.nexusmods.com/tacticsogrereborn/mods/27",
+      "distributed_in_pack": false,
+      "purpose": "Retire les cartes de bonus pour le Mode Manuel complet."
+    }
+  ],
+  "battle_data_hash_scope": "Empreinte du fichier de référence historique. Le script applique ses contrôles au BPS et aux exécutables. Le mod externe se récupère auprès de son auteur."
+}
