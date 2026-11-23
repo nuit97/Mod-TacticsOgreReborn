@@ -6,4 +6,4 @@ Première distribution publique du Mode Manuel. Le guide et le script Windows in
 
 ## Patch exact v1.0
 
-Patch BPS de 973 octets créé à partir de l'exécutable de référence du Mode Manuel. Le script vérifie les empreintes SHA-256 de la source, du patch et du résultat. [Manifeste](MANIFEST.json)
+Patch BPS de 973 octets créé à partir de l'exécutable de référence du Mode Manuel. Le script vérifie les empreintes SHA-256 de la source, du patch et du résultat. [Manifeste](../metadata/MANIFEST.json)

@@ -6,7 +6,7 @@
   "source_sha256": "7b0230a11498f40396c9048345e7cfe0ef442cb7ca8faffc6f197920d2669599",
   "target_size": 14183936,
   "target_sha256": "e84a5857cd04fe316b4c81c77405b84889537bb00291c327b00c6d65fafb5a01",
-  "patch_file": "TOR_Mode_Manuel_EXACT_v1.0.bps",
+  "patch_file": "patches/TOR_Mode_Manuel_EXACT_v1.0.bps",
   "patch_size": 973,
   "patch_sha256": "7c1dba87bb8ea8f1de0beed1ad6478de6acc4116e495803765988a9f6fd35332",
   "battle_data_release_dat_expected_sha256": "d349fb7d03a2abe124e9c6a25a09f61b3c56c615e16326c5c2b137ba6ed0aa8c",
@@ -25,5 +25,7 @@
       "purpose": "Retire les cartes de bonus pour le Mode Manuel complet."
     }
   ],
-  "battle_data_hash_scope": "Empreinte du fichier de référence historique. Le script applique ses contrôles au BPS et aux exécutables. Le mod externe se récupère auprès de son auteur."
+  "battle_data_hash_scope": "Empreinte du fichier de référence historique. Le script applique ses contrôles au BPS et aux exécutables. Le mod externe se récupère auprès de son auteur.",
+  "distribution_archive": "dist/Tactics_Ogre_Reborn_Mode_Manuel_v1.1.zip",
+  "repository_layout_note": "Les chemins du manifeste sont relatifs à la racine du dépôt. L'archive de distribution conserve les outils et le patch côte à côte."
 }

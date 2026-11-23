@@ -7,6 +7,8 @@ Il te faut ta copie Steam du jeu, l'exécutable décompacté compatible issu de 
 3. **Installe le mod requis de ChaoticBrave.** Télécharge le fichier principal *Tactics Ogre Reborn Buff Card Removal* (version 1.3 référencée), puis extrais-le. Suis la notice de l'auteur pour placer son dossier `entry` et son fichier `battle_data_release.dat` dans `Data\battle`. Ce sont ses données qui retirent les cartes de bonus. [Page et instructions de ChaoticBrave](https://www.nexusmods.com/tacticsogrereborn/mods/27)
 4. **Installe l'exécutable.** Renomme le fichier généré `Tactics Ogre Reborn.exe`, puis copie-le à la racine du jeu. Accepte le remplacement une fois la copie de sécurité de l'étape 1 effectuée. Lance le jeu via Steam.
 
+> **Archive et dépôt :** le ZIP v1.1 regroupe le script et le BPS dans un même dossier. Dans les sources GitHub, ils sont classés dans `scripts/` et `patches/` ; le script du dépôt prend en charge ces chemins.
+
 ## Vérifier en combat
 
 À la préparation, essaie d'activer l'IA pour tous, puis entre en bataille. Tes unités doivent attendre tes ordres, même si le menu d'IA globale reste visible. Le Tarot du Chariot doit être indisponible. Si des cartes de bonus apparaissent au sol, vérifie l'installation de **Buff Card Removal** à l'étape 3.

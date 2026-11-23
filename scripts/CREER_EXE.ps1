@@ -6,6 +6,10 @@ $shaSource = '7b0230a11498f40396c9048345e7cfe0ef442cb7ca8faffc6f197920d2669599'
 $shaTarget = 'e84a5857cd04fe316b4c81c77405b84889537bb00291c327b00c6d65fafb5a01'
 $shaPatch = '7c1dba87bb8ea8f1de0beed1ad6478de6acc4116e495803765988a9f6fd35332'
 $patchPath = Join-Path $PSScriptRoot 'TOR_Mode_Manuel_EXACT_v1.0.bps'
+# Archive ZIP : patch voisin du script ; dépôt GitHub : patch dans ../patches/.
+if (-not (Test-Path -LiteralPath $patchPath -PathType Leaf)) {
+    $patchPath = Join-Path $PSScriptRoot '..\patches\TOR_Mode_Manuel_EXACT_v1.0.bps'
+}
 $outputPath = Join-Path $PSScriptRoot 'Tactics Ogre Reborn - MODE MANUEL.exe'
 function Get-Sha([string]$path) {
     return (Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant()
