@@ -1,0 +1,39 @@
+name: Publier Mode Manuel v1.1
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publier-v1.1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    if: github.repository == 'nuit97/Mod-TacticsOgreReborn'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+      - name: Contrôler l'archive avant publication
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo 'ee81cc8004502346a53de975eb70796b36222bd0d868788cc4dd47ea81c054d8  dist/Tactics_Ogre_Reborn_Mode_Manuel_v1.1.zip' | sha256sum --check
+          echo '7c1dba87bb8ea8f1de0beed1ad6478de6acc4116e495803765988a9f6fd35332  patches/TOR_Mode_Manuel_EXACT_v1.0.bps' | sha256sum --check
+          test -s docs/RELEASE_v1.1.md
+      - name: Créer la Release publique une seule fois
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v1.1 >/dev/null 2>&1; then
+            echo 'Release v1.1 déjà présente, aucune modification.'
+          else
+            gh release create v1.1 dist/Tactics_Ogre_Reborn_Mode_Manuel_v1.1.zip \
+              --target "$GITHUB_SHA" \
+              --title 'Tactics Ogre: Reborn — Mode Manuel v1.1' \
+              --notes-file docs/RELEASE_v1.1.md
+          fi
